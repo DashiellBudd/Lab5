@@ -1,0 +1,42 @@
+from Time import Time
+
+t1 = Time(8,0,0)
+t2 = Time(12,0,0)
+t3 = Time(15,45,27)
+t4 = Time(1,0,0)
+t5 = Time(20,30,0)
+
+print(t1.toString())
+print(t2.toString())
+print(t3.toString())
+print(t4.toString())
+print(t5.toString())
+print(t1.getHours())
+print(t2.getSeconds())
+print(t3.getMinutes())
+print(t4.timeInSeconds())
+print(t3.timeInSeconds())
+t1.changeTheTime(7,23,59)
+print(t1.toString())
+
+print(t1.twelveHourClock())
+print(t2.twelveHourClock())
+print(t3.twelveHourClock())
+print(t4.twelveHourClock())
+print(t5.twelveHourClock())
+
+print(t1.whatTimeIsIt())
+print(t2.whatTimeIsIt())
+print(t3.whatTimeIsIt())
+print(t4.whatTimeIsIt())
+print(t5.whatTimeIsIt())
+
+print(t3.compareTo(t1))
+
+print(t1.toString())
+print(t2.toString())
+print(t3.toString())
+print(t4.toString())
+print(t5.toString())
+tt = t3.timeTill(t5)
+print(tt.toString())
